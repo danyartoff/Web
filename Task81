@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+#news{
+	border:1px solid red;
+	width:400px;
+	height:300px;
+}
+</style>
+</head>
+<body>
+
+<div id="news">
+<h1 id="id">Messi scored 5 goals</h1>
+<p id="content">Messi scored 5 goals in last match and became top-scorer of the league</p>
+</div>
+<button onclick="sportFunction()" id="sport">Load Sport news</button>
+<button onclick="politicsFunction()" id="politics">Load Politics news</button>
+<button onclick="bussinessFunction()" id="bussiness">Load Bussiness news</button>
+
+<script>
+function politicsFunction() {
+	document.getElementById('id').innerHTML="Trump visited UK"
+	document.getElementById('content').
+	    innerHTML="Trump started his foreign tour by visiting UK"
+}
+function sportFunction() {
+	document.getElementById('id').innerHTML="Messi scored 5 goals"
+	document.getElementById('content').
+	    innerHTML="Messi scored 5 goals in last match and became top-scorer of the league"
+}
+function bussinessFunction() {
+	document.getElementById('id').innerHTML="Dow Jones index has fallen"
+	document.getElementById('content').
+	    innerHTML="Dow Jones index has fallen, because of prices for petrol"
+}
+	</script>
+	
+
+
+</body>
+</html>
